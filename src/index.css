@@ -1,13 +1,108 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Genral Style */
+a {
+  text-decoration: none !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+video {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bg-video::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-holder {
+  margin: auto;
+  background-color: #323230;
+  color: #ffa447 !important;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(37, 32, 32);
+}
+
+.sec-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.868);
+  width: fit-content;
+}
+
+/* header */
+.nav-color {
+  background-color: #e8c872;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.lang-flag {
+  width: 18px;
+  aspect-ratio: 18/ 12;
+}
+
+/* Home */
+.home-txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* footer */
+/* contact section */
+#contact {
+  background-color: #161a30;
+  color: #fff;
+}
+
+#contact .sec-title {
+  border-bottom-color: #fff;
+}
+
+.contact-text p {
+  font-weight: 500;
+}
+
+.contact-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.whats {
+  position: fixed;
+  left: 3%;
+  bottom: 5%;
+}
+#contact .icon-holder {
+  width: 70px;
+  height: 70px;
+}
+
+.contact-text h4 {
+  font-size: 1.125rem;
 }
