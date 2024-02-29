@@ -1,30 +1,30 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
-// import engFlag from "../assets/imgs/eng.png";
-// import germanFlag from "../assets/imgs/germany.png";
-// import franceFlag from "../assets/imgs/fr.png";
-// import spainFlag from "../assets/imgs/Spain_flag.png";
+import engFlag from "../assets/imgs/eng.png";
+import arFlag from "../assets/imgs/Egypt.png";
 import Logo from "../assets/imgs/logo.png";
 import { Link } from "react-router-dom";
 
-function Header({ home, contact, branches, partners }) {
-  let element;
-  let contactElement;
+function Header({ home, contact, work, service, about }) {
   let homeElement;
-  let partnerElement;
+  let aboutElement;
+  let workElement;
+  let serviceElement;
+  let contactElement;
   useEffect(() => {
-    element = document.getElementById("branches");
-    contactElement = document.getElementById("contact");
     homeElement = document.getElementById("home");
-    partnerElement = document.getElementById("partners");
+    aboutElement = document.getElementById("about");
+    workElement = document.getElementById("work");
+    serviceElement = document.getElementById("service");
+    contactElement = document.getElementById("contact");
   }, []);
   return (
     <header>
       <nav className="navbar p-0 fixed-top navbar-expand-lg nav-color">
         <div className="container">
           <Link className="navbar-brand">
-            <img src={Logo} className="logo" alt="logo" />{" "}
-            <Link className="fw-bolder text-black">T-Swiss</Link>
+            <img src={Logo} className="logo" alt="logo" />
+            <Link className="fw-bolder text-white">T-Swiss</Link>
           </Link>
           <button
             className="navbar-toggler"
@@ -41,75 +41,70 @@ function Header({ home, contact, branches, partners }) {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <button
-                  className="nav-link text-black fw-bold fs-6"
+                  className="nav-link text-white fw-bold fs-6"
                   aria-current="page"
                   onClick={() =>
                     homeElement?.scrollIntoView({ behavior: "smooth" })
                   }
                 >
-                  {home}
+                  {home ? home : "Home"}
                 </button>
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-black fw-bold fs-6"
+                  className="nav-link text-white fw-bold fs-6"
                   onClick={() =>
-                    contactElement?.scrollIntoView({ behavior: "smooth" })
+                    aboutElement?.scrollIntoView({ behavior: "smooth" })
                   }
                 >
-                  {contact}
+                  {about ? about : "About"}
                 </button>
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-black fw-bold fs-6"
+                  className="nav-link text-white fw-bold fs-6"
                   onClick={() =>
-                    element?.scrollIntoView({ behavior: "smooth" })
+                    workElement?.scrollIntoView({ behavior: "smooth" })
                   }
                 >
-                  {branches}
+                  {work ? work : "Work"}
                 </button>
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-black fw-bold fs-6"
+                  className="nav-link text-white fw-bold fs-6"
                   onClick={() => {
-                    console.log(partnerElement);
-                    partnerElement?.scrollIntoView({ behavior: "smooth" });
+                    serviceElement?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
-                  {partners}
+                  {service ? service : "Service"}
+                </button>
+              </li>
+              <li className="nav-item">
+                <button
+                  className="nav-link text-white fw-bold fs-6"
+                  onClick={() => {
+                    contactElement?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  {contact ? contact : "Contact"}
                 </button>
               </li>
             </ul>
-            {/* <Link to="/">
+            <Link to="/english">
               <img
                 src={engFlag}
                 className="me-3 lang-flag"
                 alt="english language"
               />
             </Link>
-            <Link to="/germany">
+            <Link to="/">
               <img
-                src={germanFlag}
+                src={arFlag}
                 className="me-3 lang-flag"
                 alt="german language"
               />
             </Link>
-            <Link to="/french">
-              <img
-                src={franceFlag}
-                className="me-3 lang-flag"
-                alt="france language"
-              />
-            </Link>
-            <Link to="/spanish">
-              <img
-                src={spainFlag}
-                className="me-3 lang-flag"
-                alt="spanish language"
-              />
-            </Link> */}
           </div>
         </div>
       </nav>

@@ -4,18 +4,17 @@ import Footer from "../Components/Footer";
 import Home from "../Components/Home";
 import Welcome from "../Components/Welcome";
 import About from "../Components/About";
+import Projects from "../Components/Projects";
+import Service from "../Components/Service";
 
 const EnglishPage = () => {
   return (
     <>
-      <Header
-        home="Home"
-        contact="About Us"
-        branches="Our Branches"
-        partners="partners"
-      />
+      <Header />
       <Home />
-      <Welcome />
+      <Welcome t3={["", "", "", "", "", ""]} />
+      <Projects />
+      <Service />
       <About />
       <Footer
         secTitle="Contact us"

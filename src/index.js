@@ -6,15 +6,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import EnglishPage from "./Pages/EnglishPage";
-import GermanyPage from "./Pages/GermanyPage";
-import SpainPage from "./Pages/SpainPage";
-import FrancePage from "./Pages/FrancePage";
+import ArabicPage from "./Pages/ArabicPage";
 
 const router = createBrowserRouter([
-  { path: "", element: <EnglishPage /> },
-  { path: "/germany", element: <GermanyPage /> },
-  { path: "/french", element: <FrancePage /> },
-  { path: "/spanish", element: <SpainPage /> },
+  { path: "", element: <ArabicPage /> },
+  { path: "/english", element: <EnglishPage /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
