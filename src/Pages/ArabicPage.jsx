@@ -26,7 +26,7 @@ const ArabicPage = () => {
       <Welcome
         t1="مرحباً!"
         t2="شريكك الأول لحلول تطوير البرمجيات"
-        t3={["من اجل", "الويب", " و", " تطبيق الجوال ", " تطوير"]}
+        t3={[" من اجل", " الويب ", " و", " تطبيق الجوال ", " تطوير"]}
         p={`مرحبا في عالمنا! نحن تطبيق متخصص على الويب والجوال
            شركة تطوير وتطوير البرمجيات تقدم مصممة خصيصا
            حلول. بدءًا من تصميم تطبيقات الويب والهواتف المحمولة الاستثنائية للشركات الناشئة،
@@ -37,7 +37,7 @@ const ArabicPage = () => {
       />
       <Projects
         secTitle="مشاريعنا"
-        p1="يقدم الموقع الإلكتروني حلاً شاملاً لأصحاب القوارب للحفاظ على سفنهم في أفضل حالة. من خلال التنقل سهل الاستخدام والتصميم البديهي، يوفر موقع الويب معلومات حول خدمات غسيل القوارب، بما في ذلك الباقات"
+        p1="يقدم الموقع الإلكتروني حلاً شاملاً لأصحاب القوارب للحفاظ على سفنهم في أفضل حالة. من خلال التنقل سهل الاستخدام والتصميم البديهي، يوفر موقع الويب معلومات حول خدمات غسيل القوارب"
         p2="يوفر موقع الويب منصة للعملاء للتعرف عليها
                  الخدمات المتاحة مع واجهة سهلة الاستخدام وسريعة الاستجابة
                  التصميم، يهدف الموقع إلى تبسيط عملية غسيل السيارات"
@@ -71,18 +71,19 @@ const ArabicPage = () => {
       />
       <Footer
         secTitle="اتصل بنا"
-        title1="Get In Touch"
-        title2="Message Us"
-        description="Always keep in touch with us through e-mail or WhatsApp and we
-                will respond to you as soon as possible."
-        building="Name of Business"
-        buildingDesc="TIBA SWISS GMBH"
-        location="Location"
-        locationDesc="Poststrasse 17 2504 Biel/Bienne , Switzerland"
-        placeholder1="Name"
-        placeholder2="Subject"
-        placeholder3="Message"
-        submit="Send Message"
+        title1="ابقى على تواصل"
+        title2="راسلنا"
+        description="ابق على تواصل معنا دائمًا عبر البريد الإلكتروني أو الواتساب ونحن
+                 سوف نقوم بالرد عليك في أقرب وقت ممكن."
+        building="اسم المشروع"
+        buildingDesc="طيبة سويس جي إم بي إتش"
+        location="الوقع"
+        locationDesc="Poststrasse 17، 2504 بيل/بيان، سويسرا"
+        placeholder1="الاسم"
+        placeholder2="الموضوع"
+        placeholder3="الرساله"
+        submit="ارسل"
+        mail="الايميل"
       />
     </>
   );

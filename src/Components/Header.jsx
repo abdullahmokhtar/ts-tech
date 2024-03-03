@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import engFlag from "../assets/imgs/eng.png";
 import arFlag from "../assets/imgs/Egypt.png";
 import Logo from "../assets/imgs/logo.png";
@@ -18,16 +18,31 @@ function Header({ home, contact, work, service, about }) {
     serviceElement = document.getElementById("service");
     contactElement = document.getElementById("contact");
   }, []);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
     <header>
-      <nav className="navbar p-0 fixed-top navbar-expand-lg nav-color">
+      <nav
+        className={`navbar p-0 fixed-top navbar-expand-lg ${
+          (colorChange || window?.scrollY > 80) && "nav-color"
+        }`}
+      >
         <div className="container">
           <Link className="navbar-brand">
-            <img src={Logo} className="logo" alt="logo" />
-            <Link className="fw-bolder text-white">T-Swiss</Link>
+            <div className="logo-bg">
+              <img src={Logo} className="logo" alt="logo" />
+            </div>
+            <Link className="fw-bolder text-white fs-3">TS-Tech</Link>
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-white"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -35,7 +50,7 @@ function Header({ home, contact, work, service, about }) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <i className="fa-solid fa-bars"></i>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">

@@ -12,7 +12,7 @@ const About = ({ secTitle, t1, p1, t2, p2 }) => {
           </div>
           <div className="col-md-6">
             <div className="border-start border-dark border-4 h-100 ps-3 py-3">
-              <h3 className="fw-bold about-title2">{t1 ? t1 : "Our Vision"}</h3>
+              <h3 className="fw-bold about-title">{t1 ? t1 : "Our Vision"}</h3>
               <p className="fw-semibold">
                 {p1
                   ? p1
@@ -23,7 +23,7 @@ const About = ({ secTitle, t1, p1, t2, p2 }) => {
                 talented team, friendly service, fast delivery, and ongoing
                 support.`}
               </p>
-              <h3 className="fw-bold about-title2">
+              <h3 className="fw-bold about-title">
                 {t2 ? t2 : "Our Mission"}
               </h3>
               <p className="fw-semibold">

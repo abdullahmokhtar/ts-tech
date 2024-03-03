@@ -4,14 +4,14 @@ import img3 from "../assets/imgs/airplane-logo.png";
 
 const Projects = ({ secTitle, p1, message, p2, p3 }) => {
   return (
-    <section id="work" className="our-skills">
+    <section id="work" className="our-skills py-4 my-3">
       <div className="container">
         <h2 className="sec-title">{secTitle ? secTitle : "Our Projects"}</h2>
         <div className="row g-4 my-4 justify-content-center ">
           <div className="col-md-6">
-            <div className="box-shadow pb-4">
+            <div className="box-shadow">
               <div className="icon">
-                <img src={img1} alt="" />
+                <img src={img1} alt="TSI Boat Wash" />
               </div>
               <h4>TSI Boat Wash</h4>
               <p>
@@ -30,7 +30,7 @@ const Projects = ({ secTitle, p1, message, p2, p3 }) => {
             </div>
           </div>
           <div className="col-md-6">
-            <div className="box-shadow pb-5">
+            <div className="box-shadow ">
               <div className="icon">
                 <img src={img2} alt="" />
               </div>
