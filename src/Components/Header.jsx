@@ -4,13 +4,13 @@ import engFlag from "../assets/imgs/eng.png";
 import arFlag from "../assets/imgs/Egypt.png";
 import Logo from "../assets/imgs/logo.png";
 import { Link } from "react-router-dom";
+let homeElement;
+let aboutElement;
+let workElement;
+let serviceElement;
+let contactElement;
 
 function Header({ home, contact, work, service, about }) {
-  let homeElement;
-  let aboutElement;
-  let workElement;
-  let serviceElement;
-  let contactElement;
   useEffect(() => {
     homeElement = document.getElementById("home");
     aboutElement = document.getElementById("about");
@@ -123,6 +123,15 @@ function Header({ home, contact, work, service, about }) {
           </div>
         </div>
       </nav>
+      <div
+        className={`icon-holder arrow  ${
+          (colorChange || window.screenY >= 80) && "d-flex"
+        }`}
+        onClick={() => homeElement?.scrollIntoView({ behavior: "smooth" })}
+        role="button"
+      >
+        <i className="fa-solid fa-arrow-up fa-2x "></i>
+      </div>
     </header>
   );
 }

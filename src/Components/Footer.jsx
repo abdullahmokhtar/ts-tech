@@ -1,5 +1,6 @@
 import React from "react";
 import qr from "../assets/imgs/qr.png";
+import whatsApp from "../assets/imgs/WhatsApp_icon.png";
 
 const Footer = ({
   secTitle,
@@ -117,7 +118,7 @@ const Footer = ({
         rel="noreferrer"
         className="whats"
       >
-        <i className="fa-brands fa-whatsapp fa-3x text-success"></i>
+        <img src={whatsApp} alt="whatsapp icon" className="w-100" />
       </a>
     </section>
   );

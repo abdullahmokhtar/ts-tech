@@ -5,7 +5,6 @@
 }
 
 .icon-holder {
-  margin: auto;
   background-color: #323230;
   color: #e75f25 !important;
   border-radius: 50%;
@@ -58,6 +57,30 @@
   aspect-ratio: 18/ 12;
 }
 
+.arrow {
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+}
+
+.icon-holder.arrow {
+  display: none;
+  width: 45px;
+  height: 45px;
+}
+
+.arrow i:hover {
+  animation: move-up-down 0.8s infinite;
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
 /* Home */
 video {
   width: 100%;
@@ -145,7 +168,7 @@ video {
 
 .service i {
   font-size: 2.1rem;
-  color: #ff305b;
+  color: #e75f25;
   margin-bottom: 20px;
   transition: all 0.3s;
 }
@@ -202,6 +225,7 @@ textarea {
   position: fixed;
   left: 3%;
   bottom: 5%;
+  width: 45px;
 }
 
 #contact .icon-holder {
