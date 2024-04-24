@@ -1,11 +1,11 @@
-/* Genral Style */
+/* General Style */
 * {
   text-decoration: none !important;
   list-style-type: none;
 }
 
 .icon-holder {
-  background-color: #323230;
+  background-color: #fff;
   color: #e75f25 !important;
   border-radius: 50%;
   width: 100px;
@@ -16,19 +16,72 @@
   color: rgb(37, 32, 32);
 }
 
+.text-prim {
+  color: #e75f25 !important;
+}
+
+.btn-bg {
+  background-color: #156e98 !important;
+}
+
 .sec-title {
   font-size: 2.5rem;
   text-align: center;
   margin: auto;
   font-weight: bold;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.868);
+  /* border-bottom: 2px solid rgba(255, 0, 0, 0.868); */
   width: fit-content;
   color: #e65e24;
+  position: relative;
+}
+
+.sec-title2 {
+  font-size: 2.5rem;
+  text-align: center;
+  /* margin: auto; */
+  font-weight: bold;
+  /* border-bottom: 2px solid rgba(255, 0, 0, 0.868); */
+  width: fit-content;
+  color: #e65e24;
+  position: relative;
+}
+
+.sec-title3 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-right: auto;
+  font-weight: bold;
+  /* border-bottom: 2px solid rgba(255, 0, 0, 0.868); */
+  width: fit-content;
+  color: #e65e24;
+  position: relative;
+}
+
+.sec-title2::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: #e75f25;
+  position: absolute;
+  right: 0;
+  top: 0%;
+  /* margin-right: -px; */
+}
+
+.sec-title3::after {
+  content: "";
+  width: 4px;
+  height: 90%;
+  background-color: #e75f25;
+  position: absolute;
+  left: 0;
+  top: 5%;
+  margin-left: -5px;
 }
 
 /* header */
 .nav-color {
-  background-color: #e75f25;
+  background-color: #fff;
 }
 
 .navbar-brand {
@@ -39,7 +92,7 @@
 
 .logo-bg {
   margin-right: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
@@ -235,4 +288,13 @@ textarea {
 
 .contact-text h4 {
   font-size: 1.125rem;
+}
+/* colors class */
+.text-color-1 {
+  color: #15769f !important;
+}
+/* end of color class */
+.of {
+  height: 300px;
+  overflow-y: scroll;
 }

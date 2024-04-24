@@ -8,14 +8,15 @@ import Projects from "../Components/Projects";
 import Service from "../Components/Service";
 
 const EnglishPage = () => {
+  document.getElementsByTagName("html")[0].dir = "ltr";
   return (
     <>
       <Header />
       <Home />
       <Welcome t3={["", "", "", "", "", ""]} />
+      <About border="border-start ps-2" secStyle="sec-title3" />
       <Projects />
       <Service />
-      <About />
       <Footer
         secTitle="Contact us"
         title1="Get In Touch"

@@ -58,7 +58,7 @@ const Footer = ({
             </div>
           </div>
           <div className="col-md-1 col-3 m-auto">
-            <img src={qr} className="w-100 my-3 py-3 " alt="qr" />
+            <img src={qr} className="w-100 my-3  bg-white " alt="qr" />
           </div>
           <div className="col-md-6">
             <form

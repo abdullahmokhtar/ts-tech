@@ -39,7 +39,7 @@ function Header({ home, contact, work, service, about }) {
             <div className="logo-bg">
               <img src={Logo} className="logo" alt="logo" />
             </div>
-            <Link className="fw-bolder text-white fs-3">TS-Tech</Link>
+            <Link className="fw-bolder  text-prim fs-3">TS-Tech</Link>
           </Link>
           <button
             className="navbar-toggler text-white"
@@ -56,7 +56,7 @@ function Header({ home, contact, work, service, about }) {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <button
-                  className="nav-link text-white fw-bold fs-6"
+                  className="nav-link text-prim fw-bold fs-6"
                   aria-current="page"
                   onClick={() =>
                     homeElement?.scrollIntoView({ behavior: "smooth" })
@@ -67,7 +67,7 @@ function Header({ home, contact, work, service, about }) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-white fw-bold fs-6"
+                  className="nav-link text-prim fw-bold fs-6"
                   onClick={() =>
                     aboutElement?.scrollIntoView({ behavior: "smooth" })
                   }
@@ -77,7 +77,7 @@ function Header({ home, contact, work, service, about }) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-white fw-bold fs-6"
+                  className="nav-link text-prim fw-bold fs-6"
                   onClick={() =>
                     workElement?.scrollIntoView({ behavior: "smooth" })
                   }
@@ -87,7 +87,7 @@ function Header({ home, contact, work, service, about }) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-white fw-bold fs-6"
+                  className="nav-link text-prim fw-bold fs-6"
                   onClick={() => {
                     serviceElement?.scrollIntoView({ behavior: "smooth" });
                   }}
@@ -97,7 +97,7 @@ function Header({ home, contact, work, service, about }) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link text-white fw-bold fs-6"
+                  className="nav-link text-prim fw-bold fs-6"
                   onClick={() => {
                     contactElement?.scrollIntoView({ behavior: "smooth" });
                   }}

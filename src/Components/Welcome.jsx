@@ -9,15 +9,15 @@ const Welcome = ({ t1, t2, t3, p, b }) => {
   return (
     <section className="py-5 my-4">
       <div className="container text-center">
-        <h2 className="fs-1 fw-bold text-danger">
+        <h2 className="fs-1 fw-bold text-color-1">
           {t1 ? t1 : "Welcome!"} <br />
           {t2 ? t2 : "Your premier partner for software development solutions"}
         </h2>
         <h3 className="my-5">
           {t3[0] ? t3[0] : "For "}
-          <span className="text-danger">{t3[1] ? t3[1] : "Web "}</span>
+          <span className="text-prim">{t3[1] ? t3[1] : "Web "}</span>
           {t3[2] ? t3[2] : "and "}
-          <span className="text-danger">{t3[3] ? t3[3] : "Mobile App "}</span>
+          <span className="text-prim">{t3[3] ? t3[3] : "Mobile App "}</span>
           {t3[4] ? t3[4] : "Development "}
         </h3>
         <p className="w-75 m-auto text-black fs-5 fw-semibold">
@@ -31,7 +31,7 @@ const Welcome = ({ t1, t2, t3, p, b }) => {
           and frontend development`}
         </p>
         <button
-          className="btn btn-outline text-info fw-bold"
+          className="btn btn-outline text-color-1 fw-bold"
           onClick={() => aboutElement?.scrollIntoView({ behavior: "smooth" })}
         >
           {b ? b : "Know Us More"} <i className="fa-solid fa-arrow-right"></i>
